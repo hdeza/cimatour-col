@@ -3,10 +3,10 @@
 
 - /components:
 
-  /common: Componentes reutilizables que pueden ser compartidos entre diferentes partes de la aplicación (e.g., botones, modales, etc.).
-  /weather: Componentes específicos para mostrar la predicción del clima, gráficos de temperatura, etc.
-  /itinerary: Componentes relacionados con el itinerario, como tarjetas de actividades, horarios, etc.
-  /hooks: Contendrá todos los hooks personalizados para manejar lógica compartida como llamadas a APIs o gestión de estados locales.
+  - /common: Componentes reutilizables que pueden ser compartidos entre diferentes partes de la aplicación (e.g., botones, modales, etc.).
+  - /weather: Componentes específicos para mostrar la predicción del clima, gráficos de temperatura, etc.
+  - /itinerary: Componentes relacionados con el itinerario, como tarjetas de actividades, horarios, etc.
+  - /hooks: Contendrá todos los hooks personalizados para manejar lógica compartida como llamadas a APIs o gestión de estados locales.
 
 - /layouts: Estructuras de diseño global como la cabecera, pie de página, barras laterales. Esto te permite definir plantillas para reutilizarlas en varias páginas.
 
