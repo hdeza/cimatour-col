@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+# Descripción de cada carpeta:
+- /assets: Almacena todos los archivos estáticos como imágenes, íconos y fuentes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- /components:
 
-Currently, two official plugins are available:
+  /common: Componentes reutilizables que pueden ser compartidos entre diferentes partes de la aplicación (e.g., botones, modales, etc.).
+  /weather: Componentes específicos para mostrar la predicción del clima, gráficos de temperatura, etc.
+  /itinerary: Componentes relacionados con el itinerario, como tarjetas de actividades, horarios, etc.
+  /hooks: Contendrá todos los hooks personalizados para manejar lógica compartida como llamadas a APIs o gestión de estados locales.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- /layouts: Estructuras de diseño global como la cabecera, pie de página, barras laterales. Esto te permite definir plantillas para reutilizarlas en varias páginas.
 
-## Expanding the ESLint configuration
+- /pages: Las diferentes páginas de la aplicación. Cada página puede tener su propia lógica y diseño, divididas en componentes más pequeños.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- /services: Aquí es donde colocas todas las funciones para interactuar con APIs, por ejemplo, llamadas a un servicio externo para obtener datos climáticos.
 
-- Configure the top-level `parserOptions` property like this:
+- /store: Si usas un estado global como Redux o Zustand, puedes definir tus "slices" o configuraciones aquí. Cada "slice" maneja un conjunto de estados y acciones específicas de un dominio.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- /utils: Funciones auxiliares que puedes necesitar en varias partes del proyecto, como formatear fechas o calcular itinerarios.
