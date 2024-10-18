@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         "primary-orange": "#EB8D08",
+        "primary-white": "#F8F8F8",
       },
     },
   },
