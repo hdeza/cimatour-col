@@ -11,11 +11,14 @@ export default function Header() {
   };
 
   return (
-    <header className="flex bg-gray-500/15 py-3 px-4 justify-between absolute z-10 w-full top-0 left-0">
-      <h1 className="font-playfair font-bold text-white text-xl">
+    <header
+      style={{ height: "10vh" }}
+      className="flex bg-gray-500/15 py-4 px-4 justify-between absolute z-10 w-full top-0 left-0"
+    >
+      <h1 className="font-playfair font-bold text-white text-2xl">
         Clima<span className="text-primary-orange">Tour</span>
       </h1>
-      <button onClick={toogleMenu}>
+      <button onClick={toogleMenu} className="">
         <MenuIcon className="text-white" />
       </button>
       <motion.div //seccion del menu hamburguesa animado
