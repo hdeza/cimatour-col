@@ -1,8 +1,31 @@
-import valley from "../assets/valley.svg";
+//import valley from "../assets/valley.svg";
+import valley2 from "../assets/vallley3.svg";
 import EastIcon from "@mui/icons-material/East";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 export default function Main() {
+  const imageRef = useRef(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsImageLoaded(true);
+      }
+    });
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+  }, []);
+
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -30,9 +53,11 @@ export default function Main() {
   return (
     <section className="relative w-full min-h-screen">
       <img
-        src={valley}
+        src={valley2}
         alt="Imagen valle del cocora"
-        className="absolute w-full h-full object-cover saturate-150"
+        className="absolute w-full h-full object-cover saturate-150 brightness-75 "
+        ref={imageRef}
+        style={{ opacity: isImageLoaded ? 1 : 0 }}
       />
       <motion.article
         variants={containerVariants}
