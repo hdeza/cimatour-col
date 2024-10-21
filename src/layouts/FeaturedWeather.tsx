@@ -20,7 +20,7 @@ export default function FeaturedWeather() {
     },
   };
   return (
-    <section className="flex flex-col  items-center bg-primary-white space-y-10 py-6 lg:space-y-14">
+    <section className="flex flex-col  items-center bg-primary-white space-y-10 py-8 lg:space-y-14">
       <article className="flex  w-full font-roboto">
         <hr className=" border-gray-600 w-16 my-auto mr-2 lg:w-24" />
         <p className="text-sm text-gray-600 my-auto lg:text-lg">
@@ -32,7 +32,7 @@ export default function FeaturedWeather() {
         initial="hidden"
         animate="visible"
         ref={refSection_1}
-        className="space-y-8 px-8 flex flex-col md:flex-row md:items-center md:space-y-0 lg:space-x-4 lg:px-12"
+        className="space-y-8 px-8 flex flex-col md:flex-row md:items-center md:space-y-0 lg:space-x-4 lg:px-24"
       >
         <motion.article
           initial={{ opacity: 0, y: -30 }}
