@@ -47,7 +47,7 @@ export default function Header({ isInHome = false }: HeaderProps) {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Link
-                to={"forecast"}
+                to={"/forecast"}
                 className="text-white hover:text-primary-orange transition-colors duration-300"
               >
                 Forecast
