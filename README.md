@@ -17,3 +17,6 @@
 - /store: Si usas un estado global como Redux o Zustand, puedes definir tus "slices" o configuraciones aquí. Cada "slice" maneja un conjunto de estados y acciones específicas de un dominio.
 
 - /utils: Funciones auxiliares que puedes necesitar en varias partes del proyecto, como formatear fechas o calcular itinerarios.
+
+# Diseño de interfaces
+https://www.figma.com/design/JCCD7Ptu8JoDzRnk6y1zob/interfaces?node-id=0-1&t=DxJ6s6NyK3HpjMOF-1
