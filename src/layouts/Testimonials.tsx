@@ -57,7 +57,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative w-64 lg:w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -67,27 +67,29 @@ const ReviewCard = ({
       <div className="flex flex-row items-center gap-2">
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="text-sm font-medium dark:text-white lg:text-xl">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          <p className="text-xs font-medium dark:text-white/40 ">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm lg:text-base lg:mt-4">
+        {body}
+      </blockquote>
     </figure>
   );
 };
 
 export function Testimonials() {
   return (
-    <div className="flex flex-col py-8 space-y-8">
+    <div className="flex flex-col py-8 space-y-8 bg-primary-white ">
       <article className="flex w-full font-roboto">
         <hr className=" border-gray-600 w-16 my-auto mr-2 lg:w-24" />
         <p className="text-sm text-gray-600 my-auto lg:text-lg">
           USER TESTIMONIALS
         </p>
       </article>
-      <div className="relative flex  w-full flex-col items-center overflow-hidden rounded-lg  bg-background ">
+      <div className="relative flex w-full flex-col items-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
@@ -98,8 +100,8 @@ export function Testimonials() {
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+        <div className="pointer-events-none-none absolute inset-y-0 left-0 w-1/6  bg-gradient-to-r from-primary-white "></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6  bg-gradient-to-l from-primary-white"></div>
       </div>
     </div>
   );

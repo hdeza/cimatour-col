@@ -6,6 +6,7 @@ import Main from "../layouts/Main";
 import Loader from "@/components/common/Loader";
 import { motion } from "framer-motion";
 import { Testimonials } from "@/layouts/Testimonials";
+import Footer from "@/layouts/Footer";
 export default function HomePage() {
   const [loading, setLoading] = useState(true); // estado de carga inicial
 
@@ -39,6 +40,7 @@ export default function HomePage() {
         <FeaturedWeather />
         <FeaturedDestination />
         <Testimonials />
+        <Footer />
       </motion.div>
     </>
   );
