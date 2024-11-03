@@ -37,6 +37,7 @@ The **ClimaTour** application features a clean and user-friendly interface desig
 
 
 - **Responsive Design Home Page**: The application is fully responsive, providing a seamless experience on both desktop and mobile devices.
+  
   ![Responsive Design Screenshot](https://github.com/user-attachments/assets/d6d0713d-575b-4547-8064-7bad74ca0765)
   
 - **Responsive Design Weather Forecast & Itinerary Page**: 
