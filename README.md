@@ -1,22 +1,87 @@
-# Descripción de cada carpeta:
-- /assets: Almacena todos los archivos estáticos como imágenes, íconos y fuentes.
+# ClimaTour
 
-- /components:
+## Project Overview
 
-  - /common: Componentes reutilizables que pueden ser compartidos entre diferentes partes de la aplicación (e.g., botones, modales, etc.).
-  - /weather: Componentes específicos para mostrar la predicción del clima, gráficos de temperatura, etc.
-  - /itinerary: Componentes relacionados con el itinerario, como tarjetas de actividades, horarios, etc.
-  - /hooks: Contendrá todos los hooks personalizados para manejar lógica compartida como llamadas a APIs o gestión de estados locales.
+**ClimaTour** is a web application built with Vite and React, designed to provide users with accurate weather forecasts and help them plan their activities accordingly. This project leverages **Framer Motion** for smooth animations and a selection of React components that enhance the user interface (UI).
 
-- /layouts: Estructuras de diseño global como la cabecera, pie de página, barras laterales. Esto te permite definir plantillas para reutilizarlas en varias páginas.
+## Table of Contents
 
-- /pages: Las diferentes páginas de la aplicación. Cada página puede tener su propia lógica y diseño, divididas en componentes más pequeños.
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Folder Descriptions](#folder-descriptions)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-- /services: Aquí es donde colocas todas las funciones para interactuar con APIs, por ejemplo, llamadas a un servicio externo para obtener datos climáticos.
+## Technologies Used
 
-- /store: Si usas un estado global como Redux o Zustand, puedes definir tus "slices" o configuraciones aquí. Cada "slice" maneja un conjunto de estados y acciones específicas de un dominio.
+- **Vite**: A fast build tool that provides a smooth development experience.
+- **React**: A JavaScript library for building user interfaces.
+- **Framer Motion**: A library for creating animations in React applications.
+- **Custom React Components**: Components designed for a rich user experience.
 
-- /utils: Funciones auxiliares que puedes necesitar en varias partes del proyecto, como formatear fechas o calcular itinerarios.
+## Project Structure
 
-# Diseño de interfaces
-https://www.figma.com/design/JCCD7Ptu8JoDzRnk6y1zob/interfaces?node-id=0-1&t=DxJ6s6NyK3HpjMOF-1
+The project is organized into several directories to enhance maintainability and readability. Below is a detailed description of each folder.
+
+## UI Interfaces
+
+The **ClimaTour** application features a clean and user-friendly interface designed to enhance user experience. Below are some of the key UI components:
+
+- **Home Page**: Displays the current weather conditions and a brief introduction to the app.
+  ![Home Page Screenshot]([path/to/home-page-screenshot.png](https://github.com/user-attachments/assets/2d1d274f-0860-44d5-9c91-c37b42145f5f))
+
+- **Weather Forecast & Itinerary Page**: Presents detailed weather forecasts including temperature graphs and hourly predictions.
+  ![Weather Forecast & Itinerary Page Screenshot](https://github.com/user-attachments/assets/053dba79-bfa1-4ec2-98a4-8ce5523e9c5c)
+
+
+- **Responsive Design**: The application is fully responsive, providing a seamless experience on both desktop and mobile devices.
+  ![Responsive Design Screenshot](https://github.com/user-attachments/assets/d6d0713d-575b-4547-8064-7bad74ca0765)
+  ![Responsive Design Screenshot](https://github.com/user-attachments/assets/38c7bbe4-0412-4453-a08a-c9ccee94a963)
+
+
+## Folder Descriptions
+
+- **`/assets`**: Contains all static files such as images, icons, and fonts used throughout the application.
+
+- **`/components`**: Contains reusable React components used across the application.
+  - **`/common`**: Reusable components that can be shared across different parts of the application (e.g., buttons, modals).
+  - **`/weather`**: Components specifically for displaying weather forecasts, temperature graphs, etc.
+  - **`/itinerary`**: Components related to itineraries, such as activity cards and schedules.
+
+- **`/hooks`**: Contains all custom hooks that manage shared logic such as API calls and local state management.
+
+- **`/layouts`**: Global layout structures, including headers, footers, and sidebars. This allows for defining templates that can be reused across multiple pages.
+
+- **`/pages`**: Different pages of the application. Each page can have its own logic and design, broken down into smaller components.
+
+- **`/services`**: Contains functions for interacting with external APIs, such as fetching weather data from a service.
+
+- **`/store`**: If using a global state management library like Redux or Zustand, this folder contains slices or configurations. Each slice manages a set of states and actions specific to a domain.
+
+- **`/utils`**: Utility functions that may be needed across various parts of the project, such as date formatting or itinerary calculations.
+
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/climaTour.git
+   cd climaTour
+2. Install dependencies:
+ ```bash
+   npm install
+  ```
+3. Start the development server
+  ```bash
+  npm run dev
+  ```
+### Contributing
+Contributions are welcome! If you'd like to contribute to the project, please fork the repository and create a pull request with your proposed changes.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Feel free to modify any section to better fit your project or add any additional information as needed!
