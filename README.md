@@ -72,7 +72,7 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/climaTour.git
+   git clone https://github.com/hdeza/cimatour-col.git
    cd climaTour
 2. Install dependencies:
  ```bash
