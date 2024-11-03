@@ -8,6 +8,7 @@
 
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
+- [UI Interfaces](#ui-interfaces)
 - [Folder Descriptions](#folder-descriptions)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -29,14 +30,16 @@ The project is organized into several directories to enhance maintainability and
 The **ClimaTour** application features a clean and user-friendly interface designed to enhance user experience. Below are some of the key UI components:
 
 - **Home Page**: Displays the current weather conditions and a brief introduction to the app.
-  ![Home Page Screenshot]([path/to/home-page-screenshot.png](https://github.com/user-attachments/assets/2d1d274f-0860-44d5-9c91-c37b42145f5f))
+  ![Home Page Screenshot](https://github.com/user-attachments/assets/2d1d274f-0860-44d5-9c91-c37b42145f5f)
 
 - **Weather Forecast & Itinerary Page**: Presents detailed weather forecasts including temperature graphs and hourly predictions.
   ![Weather Forecast & Itinerary Page Screenshot](https://github.com/user-attachments/assets/053dba79-bfa1-4ec2-98a4-8ce5523e9c5c)
 
 
-- **Responsive Design**: The application is fully responsive, providing a seamless experience on both desktop and mobile devices.
+- **Responsive Design Home Page**: The application is fully responsive, providing a seamless experience on both desktop and mobile devices.
   ![Responsive Design Screenshot](https://github.com/user-attachments/assets/d6d0713d-575b-4547-8064-7bad74ca0765)
+  
+- **Responsive Design Weather Forecast & Itinerary Page**: 
   ![Responsive Design Screenshot](https://github.com/user-attachments/assets/38c7bbe4-0412-4453-a08a-c9ccee94a963)
 
 
